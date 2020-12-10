@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+    
+    
+<head>
+  <title>Witryna internetowa</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+      body {
+    position: relative; 
+  }
+      
+  #section1 {padding-top:10px;height:700px; background-color: white;}
+  #section2 {padding-top:50px;height:700px;color: #fff; background-color: black;}
+  #section3 {padding-top:50px;height:1000px;background-color: white;}
+  #section41 {padding-top:50px;height:500px;color: #fff; background-color: black;}
+      
+      
+            .font-up-bold .breadcrumb-item + .breadcrumb-item::before {
+content: none; }
+.font-up-bold .breadcrumb-item a h5::after {
+content: "/";
+margin-left: 1rem;
+color: #868e96; }
+      
+      
+      * {
+  box-sizing: border-box;
+}
+      
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%;
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%;
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%;
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: green;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: green;
+}
+      
+      .btn1 {
+  background-color: red;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn1:hover {
+  background-color: red;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+  </style>
+</head>
+    
+    
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" data-toggle="tooltip" data-placement="bottom" title="Główna strona">WebDev</a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#section1" data-toggle="tooltip" data-placement="bottom" title="Witryna">Przegląd</a></li>
+          <li><a href="#section2" data-toggle="tooltip" data-placement="bottom" title="Info ogólne">Informacja</a></li>
+          <li><a href="#section3" data-toggle="tooltip" data-placement="bottom" title="Zarejestrować">Formularz</a></li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" data-toggle="tooltip" data-placement="bottom" title="O firmie">O nas <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#section41">O nas!</a></li>
+            </ul>
+          </li>
+        </ul>
+          
+      </div>
+    </div>
+  </div>
+</nav> 
+    
+    <div class="font-up-bold text-uppercase">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item active">
+        <h5 class="mr-3 mb-0"><strong>Home</strong></h5>
+      </li>
+    </ol>
+  </nav>
+
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a class="" href="#">
+          <h5 class="mr-3 mb-0" data-toggle="tooltip" data-placement="bottom" title="Główna strona"><strong>WebDev</strong></h5>
+        </a></li>
+      <li class="breadcrumb-item"><a class="" href="section1">
+          <h5 class="mr-3 mb-0" data-toggle="tooltip" data-placement="bottom" title="Witryna"><strong>Przegląd</strong></h5>
+        </a></li>
+      <li class="breadcrumb-item"><a class="" href="section2">
+          <h5 class="mr-3 mb-0" data-toggle="tooltip" data-placement="bottom" title="Info ogólne"><strong>Informacja</strong></h5>
+        </a></li>
+        <li class="breadcrumb-item"><a class="" href="section3">
+          <h5 class="mr-3 mb-0" data-toggle="tooltip" data-placement="bottom" title="Zarejestrować"><strong>Formularz</strong></h5>
+        </a></li>
+      <li class="breadcrumb-item active">
+        <h5 class="mr-3 mb-0" data-toggle="tooltip" data-placement="bottom" title="O firmie"><strong>O nas</strong></h5>
+      </li>
+    </ol>
+  </nav>
+</div>
+   
+    <div id="section1" class="container-fluid"> 
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="1.jpg" alt="WebDev" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="2.jpeg" alt="WebDev" style="width:100%;">
+      </div>
+    
+      <div class="item">
+        <img src="3.jpg" alt="WebDev" style="width:100%;">
+      </div>
+    </div>
+
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Wrócić</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Dalej</span>
+    </a>
+  </div>
+</div>
+    
+    <div id="section2" class="container-fluid">
+    <div class="container">
+  <h2>Informacja</h2>
+  <div id="accordion">
+    <div class="card">
+      <div class="card-header">
+        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+          Składana pozycja grupowa nr 1
+        </a>
+      </div>
+      <div id="collapseOne" class="collapse show" data-parent="#accordion">
+        <div class="card-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+        Składana pozycja grupowa nr 2
+      </a>
+      </div>
+      <div id="collapseTwo" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+          Składana pozycja grupowa nr 3
+        </a>
+      </div>
+      <div id="collapseThree" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+        <div class="container">
+  <h2>Informacja</h2>
+  <div id="accordion">
+    <div class="card">
+      <div class="card-header">
+        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+          Składana pozycja grupowa nr 1
+        </a>
+      </div>
+      <div id="collapseOne" class="collapse show" data-parent="#accordion">
+        <div class="card-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+        Składana pozycja grupowa nr 2
+      </a>
+      </div>
+      <div id="collapseTwo" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+          Składana pozycja grupowa nr 3
+        </a>
+      </div>
+      <div id="collapseThree" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+        <div class="container">
+  <h2>Informacja</h2>
+  <div id="accordion">
+    <div class="card">
+      <div class="card-header">
+        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+          Składana pozycja grupowa nr 1
+        </a>
+      </div>
+      <div id="collapseOne" class="collapse show" data-parent="#accordion">
+        <div class="card-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+        Składana pozycja grupowa nr 2
+      </a>
+      </div>
+      <div id="collapseTwo" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+          Składana pozycja grupowa nr 3
+        </a>
+      </div>
+      <div id="collapseThree" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+    
+    <div id="section3" class="container-fluid">
+  <div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php">
+      
+        <div class="row">
+          <div class="col-50">
+            <h3>Formularz</h3>
+            <label for="fname"><i class="fa fa-user"></i> Imię i Nazwisko</label>
+            <input type="text" id="fname" name="firstname" placeholder="np. Jan Kowalski">
+            <label for="email"><i class="fa fa-envelope"></i> e-mail</label>
+            <input type="text" id="email" name="email" placeholder="np. jankowalski@example.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Ulica</label>
+            <input type="text" id="adr" name="address" placeholder="np. ul.Krakowska">
+              <label for="adr"><i class="fa fa-address-card-o"></i> nr. domu/mieszkania</label>
+            <input type="text" id="adr" name="address" placeholder="np. 25/7">
+            <label for="city"><i class="fa fa-institution"></i> Miasto</label>
+            <input type="text" id="city" name="city" placeholder="np. Wrocław">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">Województwo</label>
+                <input type="text" id="state" name="state" placeholder="np. Dolnośląskie">
+              </div>
+              <div class="col-50">
+                <label for="zip">Kod pocztowy</label>
+                <input type="text" id="zip" name="zip" placeholder="np. 50-527">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> <li class="list-inline-item"><a href="#">Zgadzam się z Polityką Prywatności</a></li>
+        </label>
+        <input type="submit" value="Prześlij" class="btn" data-toggle="tooltip" data-placement="top" title="Wyślij zgłoszenie">
+        <input type="reset" value="Resetuj" class="btn1" data-toggle="tooltip" data-placement="top" title="Zrezygnuj">
+      </form>
+    </div>
+  </div>
+  <div class="col-25">
+  </div>
+</div>
+</div>
+    
+    <div id="section41" class="container-fluid">
+  <h1>O nas</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+    
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">© 2017–2020 WebDev.pl (Nazarii Horbatenko)</p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Prywatność</a></li>
+      <li class="list-inline-item"><a href="#">Warunki</a></li>
+      <li class="list-inline-item"><a href="#">Wsparcie</a></li>
+    </ul>
+  </footer>
+
+</body>
+    
+    
+</html>
